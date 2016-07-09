@@ -1,0 +1,26 @@
+{
+  "name": "gifit-cli",
+  "repository": "joegesualdo/gifit-cli",
+  "version": "0.0.1",
+  "description": "Quickly convert video to high quality GIF.",
+  "main": "./dist/cli.js",
+  "scripts": {
+    "test": "npm run build && ./node_modules/ava/cli.js -v test.js",
+    "build": "./node_modules/distify-cli/cli.js --input-file=./cli.js --output-dir=./dist --is-node --is-cli",
+    "prepublish": "npm run build"
+  },
+  "devDependencies": {
+    "ava": "^0.15.2",
+    "distify-cli": "0.0.13"
+  },
+  "dependencies": {},
+  "keywords": [
+    "gif",
+    "convert",
+    "mov",
+    "mp4",
+    "quality",
+    "high"
+  ],
+  "author": {}
+}
