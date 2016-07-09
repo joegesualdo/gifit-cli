@@ -87,9 +87,11 @@ module.exports =
 	  input: _path2.default.resolve(argv.input),
 	  output: _path2.default.resolve(argv.output)
 	}).then(function () {
-	  _terminalLog2.default.success('Created the gif: ' + _path2.default.resolve(argv.output));
+	  process.write('\n');
+	  _terminalLog2.default.success('Created the gif: ' + _path2.default.resolve(argv.output), 2);
 	}).catch(function (err) {
-	  _terminalLog2.default.error(err.message);
+	  process.write('\n');
+	  _terminalLog2.default.error(err.message, 2);
 	});
 
 /***/ },

@@ -30,10 +30,10 @@ gifit({
   output: path.resolve(argv.output),
 })
 .then(() => {
-  process.write('\n')
+  process.stdout.write('\n')
   log.success(`Created the gif: ${path.resolve(argv.output)}`, 2)
 })
 .catch((err) => {
-  process.write('\n')
+  process.stdout.write('\n')
   log.error(err.message, 2)
 })
