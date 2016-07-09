@@ -1,7 +1,7 @@
 {
   "name": "gifit-cli",
   "repository": "joegesualdo/gifit-cli",
-  "version": "0.0.4",
+  "version": "0.0.5",
   "description": "Quickly convert video to high quality GIF.",
   "main": "./dist/cli.js",
   "scripts": {
