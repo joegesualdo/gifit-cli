@@ -87,10 +87,10 @@ module.exports =
 	  input: _path2.default.resolve(argv.input),
 	  output: _path2.default.resolve(argv.output)
 	}).then(function () {
-	  process.write('\n');
+	  process.stdout.write('\n');
 	  _terminalLog2.default.success('Created the gif: ' + _path2.default.resolve(argv.output), 2);
 	}).catch(function (err) {
-	  process.write('\n');
+	  process.stdout.write('\n');
 	  _terminalLog2.default.error(err.message, 2);
 	});
 
