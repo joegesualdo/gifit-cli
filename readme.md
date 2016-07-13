@@ -11,6 +11,10 @@ $ npm install --global gifit-cli
 $ gifit --input=./woo.mov --output=./woo.gif
 ```
 
+## Requirements
+- [ffmpeg](https://ffmpeg.org/download.html)
+    - must have the ability to run the `ffmpeg` executable (`$ ffmpeg`)
+
 ## Test
 ```
 $ npm test
